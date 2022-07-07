@@ -2,7 +2,7 @@
 
 namespace App\Classes\Languages;
 
-class PoodleLanguage extends BaseLanguage
+final class PoodleLanguage extends BaseLanguage
 {
     function convertWord(string $word): string
     {

@@ -7,7 +7,7 @@ use App\Interfaces\TranslationInterface;
 
 abstract class BaseLanguage implements TranslationInterface
 {
-    public function __construct(protected TextHelper $text, private array $validWords = []){}
+    public function __construct(protected TextHelper $text, protected array $validWords = []){}
 
     public function convertWord(string $word): string
     {
@@ -27,7 +27,6 @@ abstract class BaseLanguage implements TranslationInterface
 
     public function validate(): bool
     {
-        return true;
         $isValid = true;
         foreach($this->text->getWords() as $word)
         {

@@ -2,7 +2,7 @@
 
 namespace App\Classes\Languages;
 
-class LabradorLanguage extends BaseLanguage
+final class LabradorLanguage extends BaseLanguage
 {
     function convertWord(string $word): string
     {

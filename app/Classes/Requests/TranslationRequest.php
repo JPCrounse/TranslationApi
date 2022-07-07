@@ -13,7 +13,7 @@ class TranslationRequest extends FormRequest
         $service = new LanguageService(config('language'));
         return [
             'target' => ['required', Rule::in($service->getOutputLanguages())],
-            'source' => ['optional', Rule::in($service->getInputLanguages())],
+            'source' => [Rule::in($service->getInputLanguages())],
             'text' => 'required'
         ];
     }

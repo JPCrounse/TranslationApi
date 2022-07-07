@@ -2,7 +2,7 @@
 
 namespace App\Classes\Languages;
 
-class ParrotLanguage extends BaseLanguage
+final class ParrotLanguage extends BaseLanguage
 {
     public function translate(): BaseLanguage
     {

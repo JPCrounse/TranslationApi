@@ -23,7 +23,7 @@ class ApiController extends Controller
     {
         $text = new TextHelper($request->text);
         $source = $request->has('source') ?
-            $this->translationService->validateSource($request->source, $text) :
+            $this->translationService->validateSource($request->source, $text) ? $request->source : false :
             $this->translationService->detectSource($text);
 
         //TODO: split detection and translation
@@ -43,7 +43,7 @@ class ApiController extends Controller
             $status = 400;
         }
 
-        return response($output, $status);
+        return response(compact('source', 'output'), $status);
     }
 
     public function languages()

@@ -43,8 +43,13 @@ TODO:
 - Implement locale option in API endpoints?
 - Upgrade to Laravel 9 (Oversight during initial setup)
 - Go through and handle remaining //TODO comments in code 
+- Add / throw more descriptive exceptions on bad api requests
+- Add individual seeder files and factories instead of putting everything in the main database seeder
+- Add unit tests
+- Improve dependency injection and use of laravel service container
 - Clarify definition and scope of text parsing 
   - What defines a line
   - How to handle multiple line ending chars e.g. !?!
   - How to handle multiple spaces when splitting lines in to words
   - Is translation output expected to preserve punctuation such as "," "?" "!" etc.
+  - Clarify location of "Proost!" in drunk translation mode when an odd number of sentences has been entered

@@ -2,7 +2,7 @@
 
 namespace App\Classes\Languages;
 
-class BudgieLanguage extends BaseLanguage
+final class BudgieLanguage extends BaseLanguage
 {
     private array $vowels = ['a', 'e', 'i', 'o', 'u'];
 

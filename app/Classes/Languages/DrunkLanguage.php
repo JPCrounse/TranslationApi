@@ -2,7 +2,7 @@
 
 namespace App\Classes\Languages;
 
-class DrunkLanguage extends BaseLanguage
+final class DrunkLanguage extends BaseLanguage
 {
     function translate(): BaseLanguage
     {

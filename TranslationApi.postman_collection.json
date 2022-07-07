@@ -41,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"target\": \"parrot\",\r\n    \"text\": \"This is a test sentence. This is a second sentence\", \r\n    \"is_drunk\": true\r\n}",
+					"raw": "{\r\n    \"source\": \"labrador\",\r\n    \"target\": \"parrot\",\r\n    \"text\": \"woef woef\", \r\n    \"is_drunk\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

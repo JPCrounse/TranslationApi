@@ -22,8 +22,7 @@ Navigate to a suitable directory and run the following commands:
 
 - git clone https://github.com/JPCrounse/TranslationApi.git
 - cd ./TranslationApi
-- composer install 
-- php artisan key:gen
+- composer install
 - php artisan migrate
 - php artisan db:seed
 
